@@ -5,6 +5,7 @@ import Registration from '../Pages/registrationpage/Registration'
 import Search from '../Pages/searchpage/Search'
 import Navbars from '../Components/navbar/Navbars'
 import Error from '../Pages/error'
+import Footer from '../Components/Footer'
 
 function Router() {
   return (
@@ -16,6 +17,7 @@ function Router() {
       <Route path="/search" element={<Search />} />
       <Route path="/*" element={<Error />} />
     </Routes>
+    <Footer/>
   </BrowserRouter>
   )
 }

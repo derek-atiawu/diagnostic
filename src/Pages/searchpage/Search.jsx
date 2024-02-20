@@ -2,7 +2,9 @@ import React from 'react'
 
 function Search() {
   return (
-    <div>Search</div>
+    <div>
+        <h1>have a medical exam to do? search now!</h1>
+    </div>
   )
 }
 
