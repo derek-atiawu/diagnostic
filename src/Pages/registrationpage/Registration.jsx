@@ -1,29 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
-import Modal from "react-bootstrap/Modal";
-import Table from "react-bootstrap/Table";
-import { scans, labs } from "../../Examlists";
 
 function Registration() {
-  //state
-  const [serviceType, setServiceType] = useState("scan");
-  console.log(serviceType);
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
-  const [lists, setList] = useState(scans);
-  const madalShow = () => {
-    if (serviceType == "scan") {
-      handleShow();
-      setList(scans);
-    }
-    if (serviceType == "lab") {
-      handleShow();
-      setList(labs);
-    }
-  };
   return (
     <Row>
       <Col></Col>
@@ -61,6 +39,7 @@ function Registration() {
             <Form.Label>Date</Form.Label>
             <Form.Control />
           </Form.Group>
+
           <Button variant="primary" type="submit">
             Submit
           </Button>
