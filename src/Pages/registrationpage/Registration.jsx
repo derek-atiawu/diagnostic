@@ -53,7 +53,7 @@ function Registration() {
               <option value="Accra">Accra</option>
               <option value="Kumasi">Kumasi</option>
               <option value="Takoradi">Takoradi</option>
-              <option value="Ho">Ho</option>
+              <option value="Ho ">Ho</option>
             </Form.Select>
           </Form.Group>
 
