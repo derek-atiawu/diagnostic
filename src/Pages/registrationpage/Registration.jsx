@@ -59,7 +59,7 @@ function Registration() {
 
           <Form.Group className="mb-3" controlId="formGroupSubject">
             <Form.Label>Date</Form.Label>
-            <Form.Control />
+            <Form.Control type="date" />
           </Form.Group>
 
           <Button variant="primary" type="submit">
@@ -70,7 +70,7 @@ function Registration() {
       <Col></Col>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Select the services provided by your comapny</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Table striped bordered hover size="sm">

@@ -9,7 +9,7 @@ function Navbars() {
 
       <Navbar bg="primary" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="/" onClick={()=>{"/"}}><h2>Lab&Scan</h2></Navbar.Brand>
+          <Navbar.Brand href="/" onClick={()=>{"/"}}><h2>mediScope</h2></Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link onClick={()=>{navigate("/")}}>Home</Nav.Link>
             <Nav.Link onClick={()=>{navigate("/registration")}}>Facility Registration</Nav.Link>

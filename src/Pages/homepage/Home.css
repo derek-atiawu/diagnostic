@@ -1,3 +1,12 @@
+.head {
+    border: solid;
+    display: flex;
+    height: 600px;
+    background-image: url("/public/images/happy.webp");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
 .homeintro {
     /* display: grid; */
     /* grid-template-columns: auto; */
