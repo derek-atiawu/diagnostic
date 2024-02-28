@@ -6,22 +6,23 @@ import { scans, labs } from "../../Examlists";
 
 function Registration() {
   //state
-  const [serviceType, setServiceType] = useState("scan");
+  const [serviceType, setServiceType] = useState();
   console.log(serviceType);
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = () => {
+    setShow(true);
+  };
 
   const [lists, setList] = useState(scans);
   const madalShow = () => {
-    if (serviceType == "scan") {
-      handleShow();
+    if (serviceType === "scan") {
       setList(scans);
-    }
-    if (serviceType == "lab") {
       handleShow();
+    } else if (serviceType === "lab") {
       setList(labs);
+      handleShow();
     }
   };
   return (
@@ -70,7 +71,9 @@ function Registration() {
       <Col></Col>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Select the services provided by your comapny</Modal.Title>
+          <Modal.Title>
+            Select the services provided by your comapny
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Table striped bordered hover size="sm">

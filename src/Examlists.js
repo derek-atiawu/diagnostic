@@ -1,2 +1,2 @@
-export let scans = ["malaria", "tb", "dna"];
-export let labs = ["mris", "ct", "xray"];
+export let labs = ["malaria", "tb", "dna"];
+export let scans = ["mris", "ct", "xray"];
