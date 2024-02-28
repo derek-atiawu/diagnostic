@@ -21,7 +21,7 @@ function Footer() {
 			</div>
 		</div>
         <div className='copyright'>
-        <p>&copy; 2023 Lab&Scan Services</p>
+        <p>&copy; 2023 mediScope Services</p>
         </div>
     </div>
   )
