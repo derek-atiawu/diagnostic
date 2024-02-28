@@ -13,7 +13,7 @@ function Search() {
   };
   console.log(searchResults);
   return (
-    <div>
+    <div style={{ height: "65vh" }}>
       <Row>
         <Col></Col>
         <Col>

@@ -26,7 +26,7 @@ function Registration() {
     }
   };
   return (
-    <Row>
+    <Row style={{ height: "65vh" }}>
       <Col></Col>
       <Col>
         <Form>
